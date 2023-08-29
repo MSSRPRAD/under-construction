@@ -1,38 +1,84 @@
-.App {
+/* index.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+}
+
+/* App.css */
+.app {
   text-align: center;
+  padding: 40px 0;
+  background-color: #fff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* New styles */
+nav {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: #ff6b6b;
+}
+
+/* Additional styles for About and NotFound components */
+.app h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.app p {
+  font-size: 20px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.app.under-construction {
+  padding: 100px 0;
+  background-color: #f7f7f7;
+}
+
+.app.under-construction h1 {
+  font-size: 48px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.app.under-construction p {
+  font-size: 24px;
+  color: #555;
+  line-height: 1.6;
 }
